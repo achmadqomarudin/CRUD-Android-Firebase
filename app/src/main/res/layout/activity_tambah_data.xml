@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="com.pondokit.jadwalpiket.developer.notefirebase.TambahDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_judul"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:hint="Judul Note"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_judul"
+                android:layout_margin="20dp"
+                android:background="@null"
+                android:hint="Isi Note"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnTambahData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:text="SIMPAN" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
